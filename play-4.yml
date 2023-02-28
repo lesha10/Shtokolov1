@@ -1,0 +1,16 @@
+---
+- name: play-4
+  hosts: all
+  become: yes
+
+  tasks:
+
+  - name: create directory project
+    file:
+      path: /Project17
+      state: directory
+
+  - name: create directory Ansible
+    file:
+      path: /Ansible17
+      state: directory
